@@ -5,6 +5,6 @@ def rekursia(g_i):
     elif g_i==1:
         return 35
     else:
-        return math.sin(rekursia(g_i-1)+math.cos(g_i-2))
+        return math.sin(rekursia(g_i-1)+math.cos(rekursia(g_i-2)))
 i = int(input('vvedit i '))
 print(rekursia(i))
